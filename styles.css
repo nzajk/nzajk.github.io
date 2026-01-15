@@ -9,7 +9,7 @@ body {
   font-family: "Anybody", sans-serif;
   height: 100vh;
   overflow: hidden;
-  background: #f5f5f5;
+  background: #fff;
 }
 
 /* Title: top left */
@@ -83,8 +83,8 @@ body {
 
 /* Images */
 .carousel-track-coding .display-card img {
-  max-height: 225px;
-  max-width: 225px;
+  height: 225px;
+  width: 225px;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -104,8 +104,8 @@ body {
   font-size: 0.85rem;
 }
 .carousel-track-coding .card img {
-  max-height: 115px;
-  max-width: 115px;
+  height: 115px;
+  width: 115px;
   object-fit: cover;
   flex-shrink: 0;
   opacity: 0.6;
@@ -140,4 +140,13 @@ body {
 a {
   color: inherit;           /* inherit color from parent */
   cursor: pointer;          /* keeps the pointer on hover */
+}
+
+.top-nav .current-nav {
+  color: #656565;
+}
+
+.caption {
+  padding-top: 0.5em;
+  font-size: 0.85rem;
 }
