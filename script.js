@@ -38,7 +38,38 @@ function updateCards(clickedCard) {
     displayCard.classList.add('display-card');
 }
 
+function swapCards(clickedCard) {
+    // if clicked card is already center, do nothing
+    if (clickedCard === cards[centerIdx]) return;
+
+    // find clicked card index
+    const clickedCardIdx = cards.indexOf(clickedCard);
+
+    // swap array elements
+    const tmp = cards[centerIdx];
+    cards[centerIdx] = clickedCard;
+    cards[clickedCardIdx] = tmp;
+
+    // update classes
+    cards[clickedCardIdx].classList.remove('display-card');
+    cards[clickedCardIdx].classList.add('card');
+
+    cards[centerIdx].classList.remove('card');
+    cards[centerIdx].classList.add('display-card');
+
+    // reorder DOM
+    const parent = clickedCard.parentElement;
+    parent.innerHTML = ''; // clear
+    cards.forEach(card => parent.appendChild(card)); // append in new order
+
+    // console.log(cards);
+}
+
 // attach listeners
 cards.forEach(card => {
-    card.addEventListener("click", () => updateCards(card));
+    if (card.closest(".carousel-track-fashion")) {
+        card.addEventListener("click", () => updateCards(card));
+    } else if (card.closest(".carousel-track-coding")) {
+        card.addEventListener("click", () => swapCards(card));
+  }
 });
