@@ -18,6 +18,7 @@ body {
   top: 16px;
   left: 16px;
   font-size: 1.45rem;
+  z-index: 10; /* Added z-index to ensure it stays above content */
 }
 
 /* author: bottom left */
@@ -27,6 +28,7 @@ body {
   left: 16px;
   font-size: 0.9rem;
   opacity: 0.7;
+  z-index: 10;
 }
 
 /* image container: centered horizontally & vertically */
@@ -123,6 +125,7 @@ body {
   right: 20px;     
   font-family: 'Anybody', sans-serif;
   font-size: 0.9rem;
+  z-index: 10;
 }
 
 .top-nav a {
@@ -148,4 +151,60 @@ a {
 .caption {
   padding-top: 0.5em;
   font-size: 0.9rem;
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  body {
+    /* allow scrolling on mobile, otherwise content gets cut off */
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* Rrset the absolute centering for mobile so content flows */
+  .container {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    align-items: center;
+    width: 100%;
+    /* add padding to top (for nav/title) and bottom (for author) */
+    padding: 80px 20px 60px 20px;
+  }
+
+  /* stack Fashion Cards vertically */
+  .carousel-track-fashion {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .carousel-track-fashion .display-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+  }
+  
+  /* stack coding cards vertically */
+  .carousel-track-coding .display-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+  }
+
+  /* ensure images shrink if screen is very narrow */
+  .carousel-track-fashion .display-card img,
+  .carousel-track-coding .display-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* adjust smaller thumbnails to wrap nicely if needed */
+  .carousel-track-fashion .card img,
+  .carousel-track-coding .card img {
+    max-width: 80px;
+    max-height: 80px;
+  }
 }
