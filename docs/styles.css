@@ -153,6 +153,44 @@ a {
   font-size: 0.9rem;
 }
 
+.post {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+  padding: 2rem 0;
+  border-top: 1px solid #e8e8e8;
+  max-width: 640px;
+}
+
+.post:last-child {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.post-meta {
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.post-date {
+  font-size: 0.75rem;
+  color: #bbb;
+  letter-spacing: 0.03em;
+}
+
+.post-subject {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.post-body {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #444;
+  font-weight: 300;
+}
+
 /* for mobile */
 @media (max-width: 768px) {
   body {
