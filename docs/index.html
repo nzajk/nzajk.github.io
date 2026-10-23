@@ -3,58 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>nick zajkeskovic</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>nick zajkeskovic // about</title>
+  <meta name="description" content="Nick Zajkeskovic - Software Engineer at YouTube. Building ML systems, exploratory interfaces, and spatial computing tools." />
+  <link rel="icon" href="img/favicon.jpg" />
 
-  <link rel="icon" href="img/wack.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Antic Didone & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <p class="title">nick zajkeskovic</p>
-  <p class="author">click around.</p>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="hero-identity">
+        <h1 class="name"><a href="index.html">nick zajkeskovic</a></h1>
+        <p class="role">engineer at youtube</p>
+      </div>
 
-  <div class="top-nav">
-    <a class="current-nav" href="index.html">fashion</a>
-    <a href="coding.html">coding</a>
-    <a href="about.html">about me</a>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">about me</a>
+        <a href="projects.html" class="nav-link">projects</a>
+        <a href="blog.html" class="nav-link">blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section class="section">
+        <div class="about-intro-grid">
+          <div class="about-portrait-wrap photo-card" data-src="img/me.JPG" data-caption="nick zajkeskovic // self portrait">
+            <img src="img/me.JPG" alt="Nick Zajkeskovic portrait" loading="lazy" />
+          </div>
+
+          <div class="about-bio-text">
+            <p>
+              currently developing infra for agentic testing systems.
+            </p>
+            <p>
+              outside of software, i'm probably either losing elo on chess.com or listening to music.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="connect-links">
+        <a class="connect-link" href="https://github.com/nzajk" target="_blank" rel="noopener noreferrer">
+          github
+        </a>
+        <a class="connect-link" href="https://www.linkedin.com/in/nick-zajkeskovic/" target="_blank" rel="noopener noreferrer">
+          linkedin
+        </a>
+        <a class="connect-link" href="https://www.chess.com/member/nzajk">
+          chess.com
+        </a>
+      </div>
+    </footer>
   </div>
-
-  <main class="container">
-    <div class="carousel-track-fashion">
-      <article class="card">
-        <img src="img/garment1.jpg" alt="garment" />
-      </article>
-      <article class="card">
-        <img src="img/garment2.jpg" alt="garment" />
-      </article>
-      <article class="card">
-        <img src="img/garment3.jpg" alt="garment" />
-      </article>
-      <article class="card">
-        <img src="img/garment4.jpg" alt="garment" />
-      </article>
-      <article class="display-card">
-        <img class="display-card" src="img/garment5.jpg" alt="garment" />
-      </article>
-      <article class="card">
-        <img src="img/garment6.jpg" alt="garment" />
-      </article>
-      <article class="card">
-        <img src="img/garment7.jpg" alt="garment" />
-      </article>
-      <article class="card">
-        <img src="img/garment8.jpg" alt="garment" />
-      </article>
-      <article class="card">
-        <img src="img/garment9.jpg" alt="garment" />
-      </article>
-    </div>
-    <p class="caption">these are not my clothes. i will update it soon.</p>
-  </main>
-
-  <script src="script.js"></script>
 </body>
 </html>

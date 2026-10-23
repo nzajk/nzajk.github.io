@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>nick zajkeskovic // projects</title>
+  <meta name="description" content="Selected engineering projects and experiments by Nick Zajkeskovic - ML, spatial computing, and web interfaces." />
+  <link rel="icon" href="img/favicon.jpg" />
+
+  <!-- Google Fonts: Antic Didone & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="site-header">
+
+      <div class="hero-identity">
+        <h1 class="name"><a href="index.html">nick zajkeskovic</a></h1>
+        <p class="role">engineer at youtube</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">about me</a>
+        <a href="projects.html" class="nav-link active">projects</a>
+        <a href="blog.html" class="nav-link">blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Projects Section -->
+      <section class="section">
+        <div class="projects-list">
+          <!-- Project 1: Mixed Reality -->
+          <article class="project-item project-horizontal">
+            <!-- Left: Picture Column -->
+            <div class="project-media-col">
+              <div class="project-media-wrap photo-card" data-src="img/visionpro.jpg" data-caption="Mixed reality conversational assistant on Apple Vision Pro">
+                <img src="img/visionpro.jpg" alt="Mixed reality preview on Apple Vision Pro" loading="lazy" />
+                <span class="project-media-caption">[click to inspect]</span>
+              </div>
+            </div>
+
+            <!-- Right: Description Column -->
+            <div class="project-content-col">
+              <div class="project-header">
+                <a target="_blank" rel="noopener noreferrer" class="project-title-link">
+                  mixed reality assistant <span class="arrow">↗</span>
+                </a>
+                <div class="project-tags">
+                  <span>[visionOS]</span>
+                  <span>[ai / spatial]</span>
+                </div>
+              </div>
+
+              <p class="project-desc">
+                an ai-powered conversational assistant built natively for the apple vision pro, designed to assist adults experiencing cognitive decline, dementia, and alzheimers.
+              </p>
+              <p class="project-desc">
+                completed in association with dr. aydin farrokhi.
+              </p>
+
+              <div class="project-links">
+                <a class="project-action-link" href="https://youtu.be/746KriajfnM" target="_blank" rel="noopener noreferrer">
+                  [video demo]
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Brain Scan Classification -->
+          <article class="project-item project-horizontal">
+            <!-- Left: Picture Column -->
+            <div class="project-media-col">
+              <div class="project-media-wrap photo-card" data-src="img/brainscan.jpg" data-caption="Brain scan machine learning classification & diagnostic UI">
+                <img src="img/brainscan.jpg" alt="Brain scan machine learning classification preview" loading="lazy" />
+                <span class="project-media-caption">[click to inspect]</span>
+              </div>
+            </div>
+
+            <!-- Right: Description Column -->
+            <div class="project-content-col">
+              <div class="project-header">
+                <a target="_blank" rel="noopener noreferrer" class="project-title-link">
+                  brain scan classification <span class="arrow">↗</span>
+                </a>
+                <div class="project-tags">
+                  <span>[pytorch]</span>
+                  <span>[med-imaging]</span>
+                  <span>[cv / python]</span>
+                </div>
+              </div>
+
+              <p class="project-desc">
+                a deep learning computer vision pipeline and diagnostic application for classifying brain tumors from clinical magnetic resonance imaging.
+              </p>
+
+              <div class="project-links">
+                <a class="project-action-link" href="https://github.com/nzajk/brain-scan-classification" target="_blank" rel="noopener noreferrer">
+                  [github]
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Word Ancestry -->
+          <article class="project-item project-horizontal">
+            <!-- Left: Picture Column -->
+            <div class="project-media-col">
+              <div class="project-media-wrap photo-card" data-src="img/etymology.jpg" data-caption="Word Ancestry etymology browser extension interface">
+                <img src="img/etymology.jpg" alt="Word ancestry etymology browser extension preview" loading="lazy" />
+                <span class="project-media-caption">[click to inspect]</span>
+              </div>
+            </div>
+
+            <!-- Right: Description Column -->
+            <div class="project-content-col">
+              <div class="project-header">
+                <atarget="_blank" rel="noopener noreferrer" class="project-title-link">
+                  word ancestry <span class="arrow">↗</span>
+                </a>
+                <div class="project-tags">
+                  <span>[browser-ext]</span>
+                  <span>[nlp]</span>
+                  <span>[linguistics]</span>
+                </div>
+              </div>
+
+              <p class="project-desc">
+                a lightweight browser extension that surfaces the deep historical etymology and cognate pathways of any word highlighted on the web.
+              </p>
+
+              <div class="project-links">
+                <a class="project-action-link" href="https://github.com/nzajk/word-ancestry" target="_blank" rel="noopener noreferrer">
+                  [github]
+                </a>
+                <a class="project-action-link secondary" href="https://chromewebstore.google.com/detail/word-ancestry/aelkaahnnkmkpjkohkhbhfhkbellldbf" target="_blank" rel="noopener noreferrer">
+                  [install ♥︎]
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="connect-links">
+        <a class="connect-link" href="https://github.com/nzajk" target="_blank" rel="noopener noreferrer">
+          github
+        </a>
+        <a class="connect-link" href="https://www.linkedin.com/in/nick-zajkeskovic/" target="_blank" rel="noopener noreferrer">
+          linkedin
+        </a>
+        <a class="connect-link" href="https://www.chess.com/member/nzajk">
+          chess.com
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
