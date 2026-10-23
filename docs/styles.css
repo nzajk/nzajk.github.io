@@ -795,15 +795,12 @@ button {
   gap: 4px;
   text-decoration: none;
   color: var(--text-muted);
-  border-bottom: 1px dashed var(--text-faint);
   padding-bottom: 2px;
   transition: var(--transition);
 }
 
 .connect-link:hover {
   color: var(--accent);
-  border-bottom-style: solid;
-  border-bottom-color: var(--accent);
   opacity: 1;
 }
 
@@ -834,11 +831,6 @@ button {
 .footer-nav a {
   color: var(--text-faint);
   text-decoration: none;
-}
-
-.footer-nav a:hover {
-  color: var(--text);
-  text-decoration: underline;
 }
 
 /* ==========================================================================
