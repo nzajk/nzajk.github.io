@@ -4,10 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>nick zajkeskovic</title>
-  <meta name="description" content="Selected engineering projects and experiments by Nick Zajkeskovic - ML, spatial computing, and web interfaces." />
   <link rel="icon" href="img/favicon.jpg" />
 
-  <!-- Google Fonts: Antic Didone & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
@@ -17,11 +15,10 @@
 <body>
 
   <div class="page-wrapper">
-    <!-- Header -->
     <header class="site-header">
 
       <div class="hero-identity">
-        <h1 class="name"><a href="index.html">nick zajkeskovic</a></h1>
+        <h1 class="name">nick zajkeskovic</h1>
         <p class="role">engineer at youtube</p>
       </div>
 
@@ -33,29 +30,20 @@
     </header>
 
     <main>
-      <!-- Projects Section -->
       <section class="section">
         <div class="projects-list">
-          <!-- Project 1: Mixed Reality -->
           <article class="project-item project-horizontal">
-            <!-- Left: Picture Column -->
             <div class="project-media-col">
-              <div class="project-media-wrap photo-card" data-src="img/visionpro.jpg" data-caption="Mixed reality conversational assistant on Apple Vision Pro">
-                <img src="img/visionpro.jpg" alt="Mixed reality preview on Apple Vision Pro" loading="lazy" />
-                <span class="project-media-caption">[click to inspect]</span>
+              <div class="project-media-wrap photo-card" data-src="img/visionpro.jpg" >
+                <img src="img/visionpro.jpg" />
               </div>
             </div>
 
-            <!-- Right: Description Column -->
             <div class="project-content-col">
               <div class="project-header">
                 <a target="_blank" rel="noopener noreferrer" class="project-title-link">
-                  mixed reality assistant <span class="arrow">↗</span>
+                  mixed reality
                 </a>
-                <div class="project-tags">
-                  <span>[visionOS]</span>
-                  <span>[ai / spatial]</span>
-                </div>
               </div>
 
               <p class="project-desc">
@@ -66,34 +54,57 @@
               </p>
 
               <div class="project-links">
+                <a class="project-action-link" href="https://mira.mcmaster.ca/projects/the-influence-of-ai-on-older-adults-cognitive-experiences-and-social-participation-within-mixed-reality-environments/" target="_blank" rel="noopener noreferrer">
+                  [publication]
+                </a>
                 <a class="project-action-link" href="https://youtu.be/746KriajfnM" target="_blank" rel="noopener noreferrer">
-                  [video demo]
+                  [demo]
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2: Brain Scan Classification -->
           <article class="project-item project-horizontal">
-            <!-- Left: Picture Column -->
             <div class="project-media-col">
-              <div class="project-media-wrap photo-card" data-src="img/brainscan.jpg" data-caption="Brain scan machine learning classification & diagnostic UI">
-                <img src="img/brainscan.jpg" alt="Brain scan machine learning classification preview" loading="lazy" />
-                <span class="project-media-caption">[click to inspect]</span>
+              <div class="project-media-wrap photo-card" data-src="img/etymology.jpg" >
+                <img src="img/etymology.jpg" alt="Word ancestry etymology browser extension preview" />
               </div>
             </div>
 
-            <!-- Right: Description Column -->
+            <div class="project-content-col">
+              <div class="project-header">
+                <atarget="_blank" rel="noopener noreferrer" class="project-title-link">
+                  word ancestry
+                </a>
+              </div>
+
+              <p class="project-desc">
+                a lightweight browser extension that surfaces the deep historical etymology of any word highlighted on the web.
+              </p>
+
+              <div class="project-links">
+                <a class="project-action-link" href="https://chromewebstore.google.com/detail/word-ancestry/aelkaahnnkmkpjkohkhbhfhkbellldbf" target="_blank" rel="noopener noreferrer">
+                  [install ♥︎]
+                </a>
+                <a class="project-action-link" href="https://github.com/nzajk/word-ancestry" target="_blank" rel="noopener noreferrer">
+                  [code]
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-item project-horizontal">
+            <div class="project-media-col">
+              <div class="project-media-wrap photo-card" data-src="img/brainscan.jpg" >
+                <img src="img/brainscan.jpg" alt="Brain scan machine learning classification preview" />
+              </div>
+            </div>
+
             <div class="project-content-col">
               <div class="project-header">
                 <a target="_blank" rel="noopener noreferrer" class="project-title-link">
-                  brain scan classification <span class="arrow">↗</span>
+                  brain scan classification
                 </a>
-                <div class="project-tags">
-                  <span>[pytorch]</span>
-                  <span>[med-imaging]</span>
-                  <span>[cv / python]</span>
-                </div>
               </div>
 
               <p class="project-desc">
@@ -102,45 +113,7 @@
 
               <div class="project-links">
                 <a class="project-action-link" href="https://github.com/nzajk/brain-scan-classification" target="_blank" rel="noopener noreferrer">
-                  [github]
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: Word Ancestry -->
-          <article class="project-item project-horizontal">
-            <!-- Left: Picture Column -->
-            <div class="project-media-col">
-              <div class="project-media-wrap photo-card" data-src="img/etymology.jpg" data-caption="Word Ancestry etymology browser extension interface">
-                <img src="img/etymology.jpg" alt="Word ancestry etymology browser extension preview" loading="lazy" />
-                <span class="project-media-caption">[click to inspect]</span>
-              </div>
-            </div>
-
-            <!-- Right: Description Column -->
-            <div class="project-content-col">
-              <div class="project-header">
-                <atarget="_blank" rel="noopener noreferrer" class="project-title-link">
-                  word ancestry <span class="arrow">↗</span>
-                </a>
-                <div class="project-tags">
-                  <span>[browser-ext]</span>
-                  <span>[nlp]</span>
-                  <span>[linguistics]</span>
-                </div>
-              </div>
-
-              <p class="project-desc">
-                a lightweight browser extension that surfaces the deep historical etymology and cognate pathways of any word highlighted on the web.
-              </p>
-
-              <div class="project-links">
-                <a class="project-action-link" href="https://github.com/nzajk/word-ancestry" target="_blank" rel="noopener noreferrer">
-                  [github]
-                </a>
-                <a class="project-action-link secondary" href="https://chromewebstore.google.com/detail/word-ancestry/aelkaahnnkmkpjkohkhbhfhkbellldbf" target="_blank" rel="noopener noreferrer">
-                  [install ♥︎]
+                  [code]
                 </a>
               </div>
             </div>
@@ -149,7 +122,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
       <div class="connect-links">
         <a class="connect-link" href="https://github.com/nzajk" target="_blank" rel="noopener noreferrer">

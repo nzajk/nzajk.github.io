@@ -95,6 +95,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: crosshair;
 }
 
 ::selection {
@@ -112,7 +113,6 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  cursor: pointer;
   transition: opacity 0.15s ease, color 0.15s ease;
 }
 
@@ -390,7 +390,6 @@ button {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--bg-card);
-  cursor: pointer;
   aspect-ratio: 1 / 1;
 }
 
@@ -400,7 +399,6 @@ button {
   object-fit: cover;
   display: block;
   filter: grayscale(20%);
-  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .photo-card-info {
@@ -414,7 +412,6 @@ button {
   font-size: 0.72rem;
   opacity: 0;
   transform: translateY(4px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 /* ==========================================================================
@@ -438,7 +435,7 @@ button {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg-card);
-  padding: 24px;
+  padding: 20px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -493,7 +490,6 @@ button {
   align-items: center;
   justify-content: center;
   position: relative;
-  cursor: pointer;
 }
 
 .project-horizontal .project-media-wrap img {
@@ -504,10 +500,6 @@ button {
   display: block;
   background-color: var(--bg-subtle);
   transition: transform 0.25s ease;
-}
-
-.project-horizontal:hover .project-media-wrap img {
-  transform: scale(1.02);
 }
 
 .project-content-col {
@@ -581,7 +573,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .project-media-wrap img {
@@ -832,105 +823,3 @@ button {
   color: var(--text-faint);
   text-decoration: none;
 }
-
-/* ==========================================================================
-   Lightbox Modal
-   ========================================================================== */
-
-.lightbox-modal {
-  position: fixed;
-  inset: 0;
-  background-color: var(--overlay-bg);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.22s ease;
-}
-
-.lightbox-modal.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.lightbox-content {
-  max-width: 90vw;
-  max-height: 82vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.lightbox-img {
-  max-width: 100%;
-  max-height: 75vh;
-  object-fit: contain;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
-  border-radius: var(--radius);
-}
-
-.lightbox-meta {
-  margin-top: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  color: #fff;
-  font-size: 0.82rem;
-}
-
-.lightbox-caption {
-  color: #e2e8f0;
-}
-
-.lightbox-controls {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  gap: 12px;
-  z-index: 1010;
-}
-
-.lightbox-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: var(--radius);
-  font-size: 0.8rem;
-  transition: background 0.15s ease;
-}
-
-.lightbox-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.lightbox-nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #fff;
-  padding: 12px 14px;
-  font-size: 1.1rem;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-
-.lightbox-nav-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.lightbox-prev { left: 24px; }
-.lightbox-next { right: 24px; }
